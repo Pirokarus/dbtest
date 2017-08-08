@@ -74,7 +74,7 @@
                         <configuration>
                             <autocommit>true</autocommit>
                             <srcFiles>
-                                <srcFile>src/main/java/bell_db.sql</srcFile>
+                                <srcFile>src/main/java/bell1_db.sql</srcFile>
                             </srcFiles>
                         </configuration>
                     </execution>
