@@ -1,5 +1,4 @@
-﻿
-CREATE TABLE IF NOT EXISTS users
+﻿CREATE TABLE IF NOT EXISTS public.users
 (
   id         		serial         		PRIMARY KEY,
   login    		VARCHAR(255)         	UNIQUE NOT NULL,

@@ -67,13 +67,14 @@
 
                     <execution>
                         <id>create-schema</id>
+
                         <goals>
                             <goal>execute</goal>
                         </goals>
                         <configuration>
                             <autocommit>true</autocommit>
                             <srcFiles>
-                                <srcFile>java/functions.sql</srcFile>
+                                <srcFile>src/main/java/bell_db.sql</srcFile>
                             </srcFiles>
                         </configuration>
                     </execution>
@@ -89,7 +90,7 @@
                     <fileset>
                     <basedir>${basedir}</basedir>
                     <includes>
-                    <include>java/bell_db.sql</include>
+                    <include>java/functions.sql</include>
                     <include>java/data.sql</include>
                     </includes>
                     </fileset>
