@@ -1,29 +1,35 @@
-﻿CREATE TABLE public.users
+CREATE TABLE public.users
 (
-  id         		serial         		PRIMARY KEY,
-  login    		VARCHAR(255)         	UNIQUE NOT NULL,
-  pussword              VARCHAR(255)  		UNIQUE NOT NULL
+  id SERIAL PRIMARY KEY NOT NULL,
+  login VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+CREATE UNIQUE INDEX users_login_uindex ON public.users (login);
+CREATE UNIQUE INDEX users_password_uindex ON public.users (password);
+
+CREATE TABLE public.groups
+(
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  user_id INTEGER NOT NULL,
+  CONSTRAINT groups_users_id_fk FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE groups
+CREATE TABLE public.contacts
 (
-  id         		serial         		PRIMARY KEY,
-  name    		VARCHAR(255)         	NOT NULL,
-  user_id              	INTEGER	  		NOT NULL REFERENCES users(id) ON DELETE CASCADE 
-);
-
-CREATE TABLE contacts
-(
-  id         		serial         		PRIMARY KEY,
-  firstName    		VARCHAR(255)         	NOT NULL,
-  lastName    		VARCHAR(255)         	,
-  number    		VARCHAR(255)         	NOT NULL,
-  user_id              	INTEGER	  		NOT NULL REFERENCES users(id) ON DELETE CASCADE 
+  id SERIAL PRIMARY KEY NOT NULL,
+  firstName VARCHAR(255) NOT NULL,
+  lastName VARCHAR(255) ,
+  number VARCHAR(255) NOT NULL,
+  user_id INTEGER NOT NULL,
+  CONSTRAINT contacts_users_id_fk FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE references_table
 (
-  id         		serial         		PRIMARY KEY,
-  contactId    		INTEGER         	NOT NULL REFERENCES contacts(id)  ON DELETE CASCADE,
-  groupId              	INTEGER	  		NOT NULL REFERENCES groups(id) ON DELETE CASCADE 
+  contact_id INTEGER NOT NULL,
+  group_id INTEGER NOT NULL,
+  id SERIAL PRIMARY KEY NOT NULL,
+  CONSTRAINT references_table_contact_id_fk FOREIGN KEY (contact_id) REFERENCES contacts (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT references_table_groups_id_fk FOREIGN KEY (group_id) REFERENCES groups (id) ON DELETE CASCADE ON UPDATE CASCADE
 );

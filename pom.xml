@@ -74,7 +74,7 @@
                         <configuration>
                             <autocommit>true</autocommit>
                             <srcFiles>
-                                <srcFile>src/main/java/bell1_db.sql</srcFile>
+                                <srcFile>src/main/java/bell_db.sql</srcFile>
                             </srcFiles>
                         </configuration>
                     </execution>
@@ -93,6 +93,20 @@
                         </configuration>
                     </execution>
 
+                    <execution>
+                        <id>create-data</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                        <configuration>
+                            <autocommit>true</autocommit>
+                            <srcFiles>
+                                <srcFile>src/main/java/data.sql</srcFile>
+                            </srcFiles>
+                        </configuration>
+                    </execution>
+
                     <!--<execution>-->
                         <!--<id>create-data</id>-->
                         <!--<phase>process-test-resources</phase>-->
@@ -104,8 +118,8 @@
                             <!--<fileset>-->
                                 <!--<basedir>${basedir}</basedir>-->
                                 <!--<includes>-->
-                                    <!--<include>src/main/java/functions.sql</include>-->
-                                    <!--&lt;!&ndash;<include>src/main/java/data.sql</include>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<include>src/main/java/functions.sql</include>&ndash;&gt;-->
+                                    <!--<include>src/main/java/data.sql</include>-->
                                 <!--</includes>-->
                             <!--</fileset>-->
                         <!--</configuration>-->

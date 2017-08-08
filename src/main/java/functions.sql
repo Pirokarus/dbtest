@@ -1,242 +1,167 @@
-﻿CREATE FUNCTION add_user(_login VARCHAR(255), _ppussword VARCHAR(255)) RETURNS VOID AS'
+CREATE FUNCTION number_users () RETURNS INTEGER AS '
+DECLARE
+i INTEGER;
 BEGIN
-INSERT INTO public.users (login, pussword ) VALUES (_login,_ppussword);
+SELECT count(*) FROM users into i;
+RETURN i;
 END;
 ' LANGUAGE plpgsql;
--- create function add_user(_login character varying, _ppussword character varying) returns void
--- LANGUAGE plpgsql
--- AS '
--- BEGIN
---   INSERT INTO public.users (login, pussword ) VALUES (_login,_ppussword);
--- END;
--- '
+
+CREATE FUNCTION users_contacts ()
+  RETURNS TABLE(user_name VARCHAR(250), contacts_number INTEGER) AS '
+BEGIN
+  RETURN QUERY SELECT users.login,COUNT(contacts.user_id) FROM contacts JOIN users ON contacts.user_id = users.id
+  GROUP BY contacts.user_id,users.login;
+END;
+' LANGUAGE plpgsql;
+
+CREATE FUNCTION avg_number_of_contacts_in_group () RETURNS INTEGER AS '
+DECLARE
+i INTEGER;
+BEGIN
+SELECT avg(foo)  FROM (select count(*) as foo from references_table group by group_id) as t into i;
+RETURN i;
+END;
+' LANGUAGE plpgsql;
+
+CREATE FUNCTION avg_number_of_contacts_of_user () RETURNS INTEGER AS '
+DECLARE
+i INTEGER;
+BEGIN
+SELECT avg(foo)  FROM (select count(*) as foo from contacts group by user_id) as t into i;
+RETURN i;
+END;
+' LANGUAGE plpgsql;
+
+CREATE FUNCTION users_groups ()
+  RETURNS TABLE(user_name VARCHAR(250), contacts_number INTEGER) AS '
+BEGIN
+  RETURN QUERY SELECT users.login,COUNT(groups.user_id) FROM groups JOIN users ON groups.user_id = users.id
+  GROUP BY groups.user_id,users.login;
+END;
+' LANGUAGE plpgsql;
+
+CREATE FUNCTION dream_user ()
+  RETURNS TABLE(user_name VARCHAR(250)) AS '
+BEGIN
+  RETURN QUERY SELECT u.login from users u join(select user_id from contacts
+  group by user_id having count(*)<10) c on u.id=c.user_id;
+END;
+' LANGUAGE plpgsql;
+
+CREATE FUNCTION add_user(_login VARCHAR(255), _ppussword VARCHAR(255)) RETURNS void AS'
+BEGIN
+INSERT INTO public.users (login, password ) VALUES (_login,_ppussword);
+END;
+'LANGUAGE plpgsql;
 
 
--- CREATE FUNCTION add_user(
--- _login VARCHAR(255),
--- _pussword VARCHAR(255)
--- )
--- RETURNS void AS'
--- BEGIN
--- INSERT INTO users(
--- login,
--- pussword
--- ) VALUES (
--- _login,
--- _pussword
--- );
--- END;
--- 'LANGUAGE plpgsql;
+CREATE OR REPLACE FUNCTION add_group(_name VARCHAR(255),_userId INTEGER) RETURNS void AS '
+BEGIN
+INSERT INTO groups(
+name,
+user_id
+) VALUES (
+_name,
+_userId
+);
+END;
+'LANGUAGE plpgsql;
 
---
--- CREATE OR REPLACE FUNCTION add_group(
--- _name VARCHAR(255),
--- _userId INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- INSERT INTO groups(
--- name,
--- user_id
--- ) VALUES (
--- _name,
--- _userId
--- );
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION add_contact(
--- _firstName VARCHAR(255),
--- _lustName VARCHAR(255),
--- _number VARCHAR(255),
--- _userId INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- INSERT INTO contacts(
--- firstName,
--- lastName,
--- number,
--- user_id
--- ) VALUES (
--- _firstName,
--- _lustName,
--- _number,
--- _userId
--- );
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION delete_user(
--- _id INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- DELETE FROM users
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION delete_group(
--- _id INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- DELETE FROM groups
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION delete_contact(
--- _id INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- DELETE FROM contacts
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION update_user(
--- _id INTEGER,
--- _login VARCHAR(255),
--- _pussword VARCHAR(255)
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- UPDATE users
--- SET
--- login = _login,
--- pussword = _pussword
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION update_group(
--- _id INTEGER,
--- _name VARCHAR(255)
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- UPDATE users
--- SET
--- name = _name
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION update_contact(
--- _id INTEGER,
--- _firstName VARCHAR(255),
--- _lustName VARCHAR(255),
--- _number VARCHAR(255)
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- UPDATE users
--- SET
--- firstName = _firstName,
--- lastName = _lustName,
--- number = _number
--- WHERE id = _id;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION add_group_to_contact(
--- _contactId INTEGER,
--- _groupId INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- INSERT INTO references_table(
--- contactId,
--- groupId
--- ) VALUES (
--- _contactId,
--- _groupId
--- );
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION delete_group_from_contact(
--- _contactId INTEGER,
--- _groupId INTEGER
--- )
--- RETURNS void AS
--- $BODY$
--- BEGIN
--- DELETE FROM references_table
--- WHERE contactId = _contactId
--- AND groupId = _groupId;
--- END
--- $BODY$
--- LANGUAGE 'plpgsql';
---
---
--- CREATE OR REPLACE FUNCTION user_count()
--- RETURNS BIGINT
---     AS 'select count(*) from users;'
---     LANGUAGE SQL
---     IMMUTABLE
---     RETURNS NULL ON NULL INPUT;
---
---
--- CREATE OR REPLACE FUNCTION contacts_count()
--- RETURNS SETOF BIGINT
---     AS 'select count(*) from contacts group by user_id;'
---     LANGUAGE SQL
---     IMMUTABLE
---     RETURNS NULL ON NULL INPUT;
---
---
--- CREATE OR REPLACE FUNCTION avg_count_contacts()
--- RETURNS numeric
---     AS 'select avg(foo) from(select count(*) as foo from contacts group by user_id) as t;'
---     LANGUAGE SQL
---     IMMUTABLE
---     RETURNS NULL ON NULL INPUT;
---
---
--- CREATE OR REPLACE FUNCTION avg_count_groups()
--- RETURNS numeric
---     AS 'select avg(foo) from(select count(*) as foo from references_table group by groupId) as t;'
---     LANGUAGE SQL
---     IMMUTABLE
---     RETURNS NULL ON NULL INPUT;
---
---
--- CREATE OR REPLACE FUNCTION dream_users()
--- RETURNS SETOF VARCHAR
---     AS 'select u.login from users u join(select user_id from contacts group by user_id having count(*)<10) c on u.id=c.user_id;'
---     LANGUAGE SQL
---     IMMUTABLE
---     RETURNS NULL ON NULL INPUT;
---
---
+CREATE OR REPLACE FUNCTION add_contact(_firstName VARCHAR(255),_lustName VARCHAR(255),_number VARCHAR(255),_userId INTEGER)RETURNS void AS '
+BEGIN
+INSERT INTO contacts(
+firstName,
+lastName,
+number,
+user_id
+) VALUES (
+_firstName,
+_lustName,
+_number,
+_userId
+);
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION add_contact_to_group(_contact_id INTEGER,_group_id INTEGER)RETURNS void AS '
+BEGIN
+INSERT INTO references_table(
+  contact_id,
+group_id
+) VALUES (
+  _contact_id,
+  _group_id
+);
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION delete_user(
+_id INTEGER
+)
+RETURNS void AS'
+BEGIN
+DELETE FROM users
+WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION delete_contact(
+  _id INTEGER
+)
+  RETURNS void AS'
+BEGIN
+DELETE FROM contacts
+WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION delete_group(
+  _id INTEGER
+)
+  RETURNS void AS'
+BEGIN
+DELETE FROM groups
+WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION delete_contact_from_user(
+  _contact_id INTEGER,_group_id INTEGER
+)
+  RETURNS void AS'
+BEGIN
+DELETE FROM references_table
+WHERE contact_id = _contact_id AND group_id = _group_id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION update_group(_name VARCHAR(255),_userId INTEGER) RETURNS void AS '
+BEGIN
+  UPDATE groups
+  SET
+    name = _name
+  WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION update_contact(_firstName VARCHAR(255),_lustName VARCHAR(255),_number VARCHAR(255),_userId INTEGER)RETURNS void AS '
+BEGIN
+  UPDATE contacts
+  SET
+    firstName = _firstName,
+    lastName = _lustName,
+    number = _number
+  WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
+
+CREATE FUNCTION update_user(_login VARCHAR(255), _ppussword VARCHAR(255)) RETURNS void AS'
+BEGIN
+  UPDATE users
+  SET
+    login = _login,
+    pussword = _pussword
+  WHERE id = _id;
+END;
+'LANGUAGE plpgsql;
