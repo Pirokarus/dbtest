@@ -21,6 +21,16 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="postgres@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -28,19 +38,88 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-553">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/45c566f6-5b0f-4b71-b3fc-2d4a3a5a2184/console.sql">
+      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1502160536238" expanded="true" signature="0:32" ph="select add_u... " />
+                <marker date="1502160536238" expanded="true" signature="34:66" ph="select add_u... " />
+                <marker date="1502160536238" expanded="true" signature="69:100" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="102:136" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="138:169" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="172:217" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="219:264" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="266:312" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="314:362" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="364:407" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="409:457" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="459:504" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="506:551" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="553:600" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="602:652" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="654:703" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="706:738" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="740:772" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="774:806" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="808:840" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="842:874" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="876:908" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="910:942" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="944:976" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="978:1010" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1012:1045" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1047:1080" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1083:1125" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1127:1170" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1172:1213" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1216:1249" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1251:1284" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1286:1319" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1322:1367" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1369:1414" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1416:1462" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1464:1512" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1514:1557" ph="select add_c... " />
+                <marker date="1502160536238" expanded="true" signature="1560:1593" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1595:1628" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1630:1663" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1665:1698" ph="select add_g... " />
+                <marker date="1502160536238" expanded="true" signature="1700:1733" ph="select add_g... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <marker date="1502219253742" expanded="true" signature="94:164" ph="INSERT INTO public.users... " />
+                <marker date="1502219253742" expanded="true" signature="94:165" ph="INSERT INTO " />
+                <marker date="1502219253742" expanded="true" signature="330:400" ph="INSERT INTO public.users... " />
+                <marker date="1502219253742" expanded="true" signature="330:401" ph="INSERT INTO " />
+                <marker date="1502219253742" expanded="true" signature="533:616" ph="INSERT INTO users... " />
+                <marker date="1502219253742" expanded="true" signature="533:617" ph="INSERT INTO " />
+                <marker date="1502219253742" expanded="true" signature="3351:3377" ph="select count... users" />
+                <marker date="1502219253742" expanded="true" signature="3540:3586" ph="select count... contacts" />
+                <marker date="1502219253742" expanded="true" signature="3748:3828" ph="select avg(f... count" />
+                <marker date="1502219253742" expanded="true" signature="3769:3822" ph="select count... contacts" />
+                <marker date="1502219253742" expanded="true" signature="3988:4076" ph="select avg(f... count" />
+                <marker date="1502219253742" expanded="true" signature="4009:4070" ph="select count... references_table" />
+                <marker date="1502219253742" expanded="true" signature="4237:4355" ph="select u.log... users" />
+                <marker date="1502219253742" expanded="true" signature="4270:4334" ph="select user_... contacts" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,8 +127,8 @@
       <file leaf-file-name="bell1_db.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bell1_db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-30">
+              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -58,11 +137,9 @@
       <file leaf-file-name="bell_db.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bell_db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-              <folding>
-                <marker date="1502189874294" expanded="true" signature="0:196" ph="CREATE TABLE... IF" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +158,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/bell_db.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/functions.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -227,6 +305,9 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -724,12 +805,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502120580184</updated>
       <workItem from="1502120587907" duration="6558000" />
-      <workItem from="1502189374580" duration="4679000" />
+      <workItem from="1502189374580" duration="14773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11237000" />
+    <option name="totallyTimeSpent" value="21331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="936" extended-state="6" />
@@ -742,11 +823,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25323623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -775,6 +856,10 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -788,26 +873,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <marker date="1502189874294" expanded="true" signature="0:196" ph="CREATE TABLE... IF" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bell_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <marker date="1502189874294" expanded="true" signature="0:196" ph="CREATE TABLE... IF" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -819,7 +885,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bell1_db.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/45c566f6-5b0f-4b71-b3fc-2d4a3a5a2184/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -827,13 +893,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-553">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502160536238" expanded="true" signature="0:32" ph="select add_u... " />
+            <marker date="1502160536238" expanded="true" signature="34:66" ph="select add_u... " />
+            <marker date="1502160536238" expanded="true" signature="69:100" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="102:136" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="138:169" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="172:217" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="219:264" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="266:312" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="314:362" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="364:407" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="409:457" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="459:504" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="506:551" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="553:600" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="602:652" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="654:703" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="706:738" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="740:772" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="774:806" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="808:840" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="842:874" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="876:908" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="910:942" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="944:976" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="978:1010" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1012:1045" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1047:1080" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1083:1125" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1127:1170" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1172:1213" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1216:1249" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1251:1284" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1286:1319" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1322:1367" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1369:1414" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1416:1462" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1464:1512" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1514:1557" ph="select add_c... " />
+            <marker date="1502160536238" expanded="true" signature="1560:1593" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1595:1628" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1630:1663" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1665:1698" ph="select add_g... " />
+            <marker date="1502160536238" expanded="true" signature="1700:1733" ph="select add_g... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/ee5a4fbc/45c566f6-5b0f-4b71-b3fc-2d4a3a5a2184/postgres.public.contacts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bell1_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bell_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <marker date="1502219253742" expanded="true" signature="94:164" ph="INSERT INTO public.users... " />
+            <marker date="1502219253742" expanded="true" signature="94:165" ph="INSERT INTO " />
+            <marker date="1502219253742" expanded="true" signature="330:400" ph="INSERT INTO public.users... " />
+            <marker date="1502219253742" expanded="true" signature="330:401" ph="INSERT INTO " />
+            <marker date="1502219253742" expanded="true" signature="533:616" ph="INSERT INTO users... " />
+            <marker date="1502219253742" expanded="true" signature="533:617" ph="INSERT INTO " />
+            <marker date="1502219253742" expanded="true" signature="3351:3377" ph="select count... users" />
+            <marker date="1502219253742" expanded="true" signature="3540:3586" ph="select count... contacts" />
+            <marker date="1502219253742" expanded="true" signature="3748:3828" ph="select avg(f... count" />
+            <marker date="1502219253742" expanded="true" signature="3769:3822" ph="select count... contacts" />
+            <marker date="1502219253742" expanded="true" signature="3988:4076" ph="select avg(f... count" />
+            <marker date="1502219253742" expanded="true" signature="4009:4070" ph="select count... references_table" />
+            <marker date="1502219253742" expanded="true" signature="4237:4355" ph="select u.log... users" />
+            <marker date="1502219253742" expanded="true" signature="4270:4334" ph="select user_... contacts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: postgresql:postgresql:9.1-901-1.jdbc4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -1,18 +1,18 @@
-﻿CREATE TABLE IF NOT EXISTS public.users
+﻿CREATE TABLE public.users
 (
   id         		serial         		PRIMARY KEY,
   login    		VARCHAR(255)         	UNIQUE NOT NULL,
   pussword              VARCHAR(255)  		UNIQUE NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS groups
+CREATE TABLE groups
 (
   id         		serial         		PRIMARY KEY,
   name    		VARCHAR(255)         	NOT NULL,
   user_id              	INTEGER	  		NOT NULL REFERENCES users(id) ON DELETE CASCADE 
 );
 
-CREATE TABLE IF NOT EXISTS contacts
+CREATE TABLE contacts
 (
   id         		serial         		PRIMARY KEY,
   firstName    		VARCHAR(255)         	NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS contacts
   user_id              	INTEGER	  		NOT NULL REFERENCES users(id) ON DELETE CASCADE 
 );
 
-CREATE TABLE IF NOT EXISTS references_table
+CREATE TABLE references_table
 (
   id         		serial         		PRIMARY KEY,
   contactId    		INTEGER         	NOT NULL REFERENCES contacts(id)  ON DELETE CASCADE,
