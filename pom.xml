@@ -44,7 +44,7 @@
                             <goal>execute</goal>
                         </goals>
                         <configuration>
-                            <url>jdbc:postgressql://localhost:5433:belldb2</url>
+                            <url>jdbc:postgresql://localhost:5433:belldb2</url>
                             <autocommit>true</autocommit>
                             <sqlCommand>drop database belldb2</sqlCommand>
                             <onError>continue</onError>
@@ -58,7 +58,7 @@
                             <goal>execute</goal>
                         </goals>
                         <configuration>
-                            <url>jdbc:postgressql://localhost:5433:belldb2</url>
+                            <url>jdbc:postgresql://localhost:5433:belldb2</url>
                             <autocommit>true</autocommit>
                             <sqlCommand>create database belldb2</sqlCommand>
                         </configuration>
@@ -67,7 +67,7 @@
 
                     <execution>
                         <id>create-schema</id>
-
+                        <phase>process-test-resources</phase>
                         <goals>
                             <goal>execute</goal>
                         </goals>
