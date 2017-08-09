@@ -62,71 +62,71 @@
       <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="833">
               <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="47" />
+            <state relative-caret-position="225">
+              <caret line="173" column="30" lean-forward="false" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="30" />
               <folding>
-                <marker date="1502235195790" expanded="true" signature="78:111" ph="SELECT count... users" />
-                <marker date="1502235195790" expanded="true" signature="78:122" ph="SELECT count... " />
-                <marker date="1502235195790" expanded="true" signature="261:412" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="261:413" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="274:412" ph="SELECT users... contacts" />
-                <marker date="1502235195790" expanded="true" signature="537:635" ph="SELECT avg(f... count" />
-                <marker date="1502235195790" expanded="true" signature="537:646" ph="SELECT avg(f... " />
-                <marker date="1502235195790" expanded="true" signature="560:622" ph="select count... references_table" />
-                <marker date="1502235195790" expanded="true" signature="769:858" ph="SELECT avg(f... count" />
-                <marker date="1502235195790" expanded="true" signature="769:869" ph="SELECT avg(f... " />
-                <marker date="1502235195790" expanded="true" signature="792:845" ph="select count... contacts" />
-                <marker date="1502235195790" expanded="true" signature="1006:1149" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="1006:1150" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="1019:1149" ph="SELECT users... groups" />
-                <marker date="1502235195790" expanded="true" signature="1260:1393" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="1260:1394" ph="RETURN QUERY... " />
-                <marker date="1502235195790" expanded="true" signature="1273:1393" ph="SELECT users... contacts" />
-                <marker date="1502235195790" expanded="true" signature="1306:1334" ph="select user_... contacts" />
-                <marker date="1502235195790" expanded="true" signature="1306:1372" ph="select user_... contacts" />
-                <marker date="1502235195790" expanded="true" signature="1515:1585" ph="INSERT INTO public.users... " />
-                <marker date="1502235195790" expanded="true" signature="1515:1586" ph="INSERT INTO " />
-                <marker date="1502235195790" expanded="true" signature="1710:1771" ph="INSERT INTO groups... " />
-                <marker date="1502235195790" expanded="true" signature="1710:1772" ph="INSERT INTO " />
-                <marker date="1502235195790" expanded="true" signature="1945:2056" ph="INSERT INTO contacts... " />
-                <marker date="1502235195790" expanded="true" signature="1945:2057" ph="INSERT INTO " />
-                <marker date="1502235195790" expanded="true" signature="2193:2271" ph="INSERT INTO " />
-                <marker date="1502235195790" expanded="true" signature="2193:2285" ph="INSERT INTO references_table... " />
-                <marker date="1502235195790" expanded="true" signature="2193:2286" ph="INSERT INTO " />
-                <marker date="1502235195790" expanded="true" signature="2389:2421" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2389:2422" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2532:2567" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2532:2568" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2676:2709" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2676:2710" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2856:2940" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="2856:2941" ph="DELETE FROM " />
-                <marker date="1502235195790" expanded="true" signature="3069:3122" ph="UPDATE group... " />
-                <marker date="1502235195790" expanded="true" signature="3069:3123" ph="UPDATE group... " />
-                <marker date="1502235195790" expanded="true" signature="3301:3414" ph="UPDATE conta... " />
-                <marker date="1502235195790" expanded="true" signature="3301:3415" ph="UPDATE conta... " />
-                <marker date="1502235195790" expanded="true" signature="3540:3620" ph="UPDATE users... " />
-                <marker date="1502235195790" expanded="true" signature="3540:3621" ph="UPDATE users... " />
+                <marker date="1502237775849" expanded="true" signature="112:145" ph="SELECT count... users" />
+                <marker date="1502237775849" expanded="true" signature="112:156" ph="SELECT count... " />
+                <marker date="1502237775849" expanded="true" signature="340:491" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="340:492" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="353:491" ph="SELECT users... contacts" />
+                <marker date="1502237775849" expanded="true" signature="662:760" ph="SELECT avg(f... count" />
+                <marker date="1502237775849" expanded="true" signature="662:771" ph="SELECT avg(f... " />
+                <marker date="1502237775849" expanded="true" signature="685:747" ph="select count... references_table" />
+                <marker date="1502237775849" expanded="true" signature="942:1031" ph="SELECT avg(f... count" />
+                <marker date="1502237775849" expanded="true" signature="942:1042" ph="SELECT avg(f... " />
+                <marker date="1502237775849" expanded="true" signature="965:1018" ph="select count... contacts" />
+                <marker date="1502237775849" expanded="true" signature="1220:1363" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="1220:1364" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="1233:1363" ph="SELECT users... groups" />
+                <marker date="1502237775849" expanded="true" signature="1553:1686" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="1553:1687" ph="RETURN QUERY... " />
+                <marker date="1502237775849" expanded="true" signature="1566:1686" ph="SELECT users... contacts" />
+                <marker date="1502237775849" expanded="true" signature="1599:1627" ph="select user_... contacts" />
+                <marker date="1502237775849" expanded="true" signature="1599:1665" ph="select user_... contacts" />
+                <marker date="1502237775849" expanded="true" signature="1834:1903" ph="INSERT INTO public.users... " />
+                <marker date="1502237775849" expanded="true" signature="1834:1904" ph="INSERT INTO " />
+                <marker date="1502237775849" expanded="true" signature="2048:2109" ph="INSERT INTO groups... " />
+                <marker date="1502237775849" expanded="true" signature="2048:2110" ph="INSERT INTO " />
+                <marker date="1502237775849" expanded="true" signature="2306:2417" ph="INSERT INTO contacts... " />
+                <marker date="1502237775849" expanded="true" signature="2306:2418" ph="INSERT INTO " />
+                <marker date="1502237775849" expanded="true" signature="2584:2662" ph="INSERT INTO " />
+                <marker date="1502237775849" expanded="true" signature="2584:2676" ph="INSERT INTO references_table... " />
+                <marker date="1502237775849" expanded="true" signature="2584:2677" ph="INSERT INTO " />
+                <marker date="1502237775849" expanded="true" signature="2805:2837" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="2805:2838" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="2969:3004" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="2969:3005" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="3132:3165" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="3132:3166" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="3342:3426" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="3342:3427" ph="DELETE FROM " />
+                <marker date="1502237775849" expanded="true" signature="3580:3633" ph="UPDATE group... " />
+                <marker date="1502237775849" expanded="true" signature="3580:3634" ph="UPDATE group... " />
+                <marker date="1502237775849" expanded="true" signature="3839:3952" ph="UPDATE conta... " />
+                <marker date="1502237775849" expanded="true" signature="3839:3953" ph="UPDATE conta... " />
+                <marker date="1502237775849" expanded="true" signature="4108:4188" ph="UPDATE users... " />
+                <marker date="1502237775849" expanded="true" signature="4108:4189" ph="UPDATE users... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bell_db.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bell_db.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bell_db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -145,11 +145,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/functions.sql" />
         <option value="$PROJECT_DIR$/src/main/java/test.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/bell_db.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/functions.sql" />
       </list>
     </option>
   </component>
@@ -796,12 +796,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502120580184</updated>
       <workItem from="1502120587907" duration="6558000" />
-      <workItem from="1502189374580" duration="23215000" />
+      <workItem from="1502189374580" duration="24220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29773000" />
+    <option name="totallyTimeSpent" value="30778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="936" extended-state="6" />
@@ -908,65 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="47" />
-          <folding>
-            <marker date="1502235195790" expanded="true" signature="78:111" ph="SELECT count... users" />
-            <marker date="1502235195790" expanded="true" signature="78:122" ph="SELECT count... " />
-            <marker date="1502235195790" expanded="true" signature="261:412" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="261:413" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="274:412" ph="SELECT users... contacts" />
-            <marker date="1502235195790" expanded="true" signature="537:635" ph="SELECT avg(f... count" />
-            <marker date="1502235195790" expanded="true" signature="537:646" ph="SELECT avg(f... " />
-            <marker date="1502235195790" expanded="true" signature="560:622" ph="select count... references_table" />
-            <marker date="1502235195790" expanded="true" signature="769:858" ph="SELECT avg(f... count" />
-            <marker date="1502235195790" expanded="true" signature="769:869" ph="SELECT avg(f... " />
-            <marker date="1502235195790" expanded="true" signature="792:845" ph="select count... contacts" />
-            <marker date="1502235195790" expanded="true" signature="1006:1149" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="1006:1150" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="1019:1149" ph="SELECT users... groups" />
-            <marker date="1502235195790" expanded="true" signature="1260:1393" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="1260:1394" ph="RETURN QUERY... " />
-            <marker date="1502235195790" expanded="true" signature="1273:1393" ph="SELECT users... contacts" />
-            <marker date="1502235195790" expanded="true" signature="1306:1334" ph="select user_... contacts" />
-            <marker date="1502235195790" expanded="true" signature="1306:1372" ph="select user_... contacts" />
-            <marker date="1502235195790" expanded="true" signature="1515:1585" ph="INSERT INTO public.users... " />
-            <marker date="1502235195790" expanded="true" signature="1515:1586" ph="INSERT INTO " />
-            <marker date="1502235195790" expanded="true" signature="1710:1771" ph="INSERT INTO groups... " />
-            <marker date="1502235195790" expanded="true" signature="1710:1772" ph="INSERT INTO " />
-            <marker date="1502235195790" expanded="true" signature="1945:2056" ph="INSERT INTO contacts... " />
-            <marker date="1502235195790" expanded="true" signature="1945:2057" ph="INSERT INTO " />
-            <marker date="1502235195790" expanded="true" signature="2193:2271" ph="INSERT INTO " />
-            <marker date="1502235195790" expanded="true" signature="2193:2285" ph="INSERT INTO references_table... " />
-            <marker date="1502235195790" expanded="true" signature="2193:2286" ph="INSERT INTO " />
-            <marker date="1502235195790" expanded="true" signature="2389:2421" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2389:2422" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2532:2567" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2532:2568" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2676:2709" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2676:2710" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2856:2940" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="2856:2941" ph="DELETE FROM " />
-            <marker date="1502235195790" expanded="true" signature="3069:3122" ph="UPDATE group... " />
-            <marker date="1502235195790" expanded="true" signature="3069:3123" ph="UPDATE group... " />
-            <marker date="1502235195790" expanded="true" signature="3301:3414" ph="UPDATE conta... " />
-            <marker date="1502235195790" expanded="true" signature="3301:3415" ph="UPDATE conta... " />
-            <marker date="1502235195790" expanded="true" signature="3540:3620" ph="UPDATE users... " />
-            <marker date="1502235195790" expanded="true" signature="3540:3621" ph="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/ee5a4fbc/45c566f6-5b0f-4b71-b3fc-2d4a3a5a2184/postgres.public.contacts">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -982,9 +923,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bell_db.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/functions.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="173" column="30" lean-forward="false" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="30" />
+          <folding>
+            <marker date="1502237775849" expanded="true" signature="112:145" ph="SELECT count... users" />
+            <marker date="1502237775849" expanded="true" signature="112:156" ph="SELECT count... " />
+            <marker date="1502237775849" expanded="true" signature="340:491" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="340:492" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="353:491" ph="SELECT users... contacts" />
+            <marker date="1502237775849" expanded="true" signature="662:760" ph="SELECT avg(f... count" />
+            <marker date="1502237775849" expanded="true" signature="662:771" ph="SELECT avg(f... " />
+            <marker date="1502237775849" expanded="true" signature="685:747" ph="select count... references_table" />
+            <marker date="1502237775849" expanded="true" signature="942:1031" ph="SELECT avg(f... count" />
+            <marker date="1502237775849" expanded="true" signature="942:1042" ph="SELECT avg(f... " />
+            <marker date="1502237775849" expanded="true" signature="965:1018" ph="select count... contacts" />
+            <marker date="1502237775849" expanded="true" signature="1220:1363" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="1220:1364" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="1233:1363" ph="SELECT users... groups" />
+            <marker date="1502237775849" expanded="true" signature="1553:1686" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="1553:1687" ph="RETURN QUERY... " />
+            <marker date="1502237775849" expanded="true" signature="1566:1686" ph="SELECT users... contacts" />
+            <marker date="1502237775849" expanded="true" signature="1599:1627" ph="select user_... contacts" />
+            <marker date="1502237775849" expanded="true" signature="1599:1665" ph="select user_... contacts" />
+            <marker date="1502237775849" expanded="true" signature="1834:1903" ph="INSERT INTO public.users... " />
+            <marker date="1502237775849" expanded="true" signature="1834:1904" ph="INSERT INTO " />
+            <marker date="1502237775849" expanded="true" signature="2048:2109" ph="INSERT INTO groups... " />
+            <marker date="1502237775849" expanded="true" signature="2048:2110" ph="INSERT INTO " />
+            <marker date="1502237775849" expanded="true" signature="2306:2417" ph="INSERT INTO contacts... " />
+            <marker date="1502237775849" expanded="true" signature="2306:2418" ph="INSERT INTO " />
+            <marker date="1502237775849" expanded="true" signature="2584:2662" ph="INSERT INTO " />
+            <marker date="1502237775849" expanded="true" signature="2584:2676" ph="INSERT INTO references_table... " />
+            <marker date="1502237775849" expanded="true" signature="2584:2677" ph="INSERT INTO " />
+            <marker date="1502237775849" expanded="true" signature="2805:2837" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="2805:2838" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="2969:3004" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="2969:3005" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="3132:3165" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="3132:3166" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="3342:3426" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="3342:3427" ph="DELETE FROM " />
+            <marker date="1502237775849" expanded="true" signature="3580:3633" ph="UPDATE group... " />
+            <marker date="1502237775849" expanded="true" signature="3580:3634" ph="UPDATE group... " />
+            <marker date="1502237775849" expanded="true" signature="3839:3952" ph="UPDATE conta... " />
+            <marker date="1502237775849" expanded="true" signature="3839:3953" ph="UPDATE conta... " />
+            <marker date="1502237775849" expanded="true" signature="4108:4188" ph="UPDATE users... " />
+            <marker date="1502237775849" expanded="true" signature="4108:4189" ph="UPDATE users... " />
+          </folding>
         </state>
       </provider>
     </entry>

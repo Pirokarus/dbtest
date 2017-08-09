@@ -1,3 +1,4 @@
+-- Создание таблицы пользователей
 CREATE TABLE public.users
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -7,6 +8,7 @@ CREATE TABLE public.users
 CREATE UNIQUE INDEX users_login_uindex ON public.users (login);
 CREATE UNIQUE INDEX users_password_uindex ON public.users (password);
 
+-- Создание таблицы групп
 CREATE TABLE public.groups
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -15,6 +17,7 @@ CREATE TABLE public.groups
   CONSTRAINT groups_users_id_fk FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+-- Создание таблицы контактов
 CREATE TABLE public.contacts
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -25,7 +28,8 @@ CREATE TABLE public.contacts
   CONSTRAINT contacts_users_id_fk FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE references_table
+-- Создание таблицы связей пользователей и групп
+CREATE TABLE public.references_table
 (
   contact_id INTEGER NOT NULL,
   group_id INTEGER NOT NULL,

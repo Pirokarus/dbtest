@@ -1,3 +1,4 @@
+-- Общее количество пользователей
 CREATE FUNCTION number_users () RETURNS INTEGER AS '
 DECLARE
 i INTEGER;
@@ -7,6 +8,7 @@ RETURN i;
 END;
 ' LANGUAGE plpgsql;
 
+-- Количество контактов каждого пользователя
 CREATE FUNCTION users_contacts ()
   RETURNS TABLE(user_name VARCHAR(250), contacts_number INTEGER) AS '
 BEGIN
@@ -15,6 +17,7 @@ BEGIN
 END;
 ' LANGUAGE plpgsql;
 
+-- Среднее количество пользователей в группах
 CREATE FUNCTION avg_number_of_contacts_in_group () RETURNS INTEGER AS '
 DECLARE
 i INTEGER;
@@ -24,6 +27,7 @@ RETURN i;
 END;
 ' LANGUAGE plpgsql;
 
+-- Среднее количество контактов у пользователей
 CREATE FUNCTION avg_number_of_contacts_of_user () RETURNS INTEGER AS '
 DECLARE
 i INTEGER;
@@ -33,6 +37,7 @@ RETURN i;
 END;
 ' LANGUAGE plpgsql;
 
+-- Количество групп каждого пользователя
 CREATE FUNCTION users_groups ()
   RETURNS TABLE(user_name VARCHAR(250), contacts_number INTEGER) AS '
 BEGIN
@@ -41,6 +46,7 @@ BEGIN
 END;
 ' LANGUAGE plpgsql;
 
+-- Список неактивных пользователей приложения - количество контактов меньше 10
 CREATE FUNCTION dream_user ()
   RETURNS TABLE(user_name VARCHAR(250)) AS '
 BEGIN
@@ -49,13 +55,14 @@ BEGIN
 END;
 ' LANGUAGE plpgsql;
 
-CREATE FUNCTION add_user(_login VARCHAR(255), _ppussword VARCHAR(255)) RETURNS void AS'
+-- Добавление пользователя
+CREATE FUNCTION add_user(_login VARCHAR(255), _pussword VARCHAR(255)) RETURNS void AS'
 BEGIN
-INSERT INTO public.users (login, password ) VALUES (_login,_ppussword);
+INSERT INTO public.users (login, password ) VALUES (_login,_pussword);
 END;
 'LANGUAGE plpgsql;
 
-
+-- Добавление группы
 CREATE OR REPLACE FUNCTION add_group(_name VARCHAR(255),_userId INTEGER) RETURNS void AS '
 BEGIN
 INSERT INTO groups(
@@ -68,6 +75,7 @@ _userId
 END;
 'LANGUAGE plpgsql;
 
+-- Добавление контакта
 CREATE OR REPLACE FUNCTION add_contact(_firstName VARCHAR(255),_lustName VARCHAR(255),_number VARCHAR(255),_userId INTEGER)RETURNS void AS '
 BEGIN
 INSERT INTO contacts(
@@ -84,6 +92,7 @@ _userId
 END;
 'LANGUAGE plpgsql;
 
+-- Присвоение группы контакту
 CREATE OR REPLACE FUNCTION add_contact_to_group(_contact_id INTEGER,_group_id INTEGER)RETURNS void AS '
 BEGIN
 INSERT INTO references_table(
@@ -96,6 +105,7 @@ group_id
 END;
 'LANGUAGE plpgsql;
 
+-- Удаление пользователя
 CREATE OR REPLACE FUNCTION delete_user(
 _id INTEGER
 )
@@ -106,6 +116,7 @@ WHERE id = _id;
 END;
 'LANGUAGE plpgsql;
 
+-- Удаление контакта
 CREATE OR REPLACE FUNCTION delete_contact(
   _id INTEGER
 )
@@ -116,6 +127,7 @@ WHERE id = _id;
 END;
 'LANGUAGE plpgsql;
 
+-- Удаление группы
 CREATE OR REPLACE FUNCTION delete_group(
   _id INTEGER
 )
@@ -126,6 +138,7 @@ WHERE id = _id;
 END;
 'LANGUAGE plpgsql;
 
+-- Удаление группы у контакта
 CREATE OR REPLACE FUNCTION delete_contact_from_user(
   _contact_id INTEGER,_group_id INTEGER
 )
@@ -136,6 +149,7 @@ WHERE contact_id = _contact_id AND group_id = _group_id;
 END;
 'LANGUAGE plpgsql;
 
+-- Редактирование группы
 CREATE OR REPLACE FUNCTION update_group(_name VARCHAR(255),_userId INTEGER) RETURNS void AS '
 BEGIN
   UPDATE groups
@@ -145,6 +159,7 @@ BEGIN
 END;
 'LANGUAGE plpgsql;
 
+-- Редактирование контакта
 CREATE OR REPLACE FUNCTION update_contact(_firstName VARCHAR(255),_lustName VARCHAR(255),_number VARCHAR(255),_userId INTEGER)RETURNS void AS '
 BEGIN
   UPDATE contacts
@@ -156,7 +171,8 @@ BEGIN
 END;
 'LANGUAGE plpgsql;
 
-CREATE FUNCTION update_user(_login VARCHAR(255), _ppussword VARCHAR(255)) RETURNS void AS'
+-- Редактирование пользователя
+CREATE FUNCTION update_user(_login VARCHAR(255), _pussword VARCHAR(255)) RETURNS void AS'
 BEGIN
   UPDATE users
   SET
